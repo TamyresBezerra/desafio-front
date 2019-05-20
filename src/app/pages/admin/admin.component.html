@@ -1,0 +1,16 @@
+<div class="geral">
+  <ul class="nav justify-content-end navc">
+    <li class="nav-item" (click)="listarPedidos()">
+      <a class="nav-link active" style="color: white;">Listar Pedidos</a>
+    </li>
+    <li class="nav-item" (click)="realizarPedidos()">
+      <a class="nav-link active"  style="color: white;">Realizar Pedidos</a>
+    </li>
+    <li class="nav-item" (click)="logout()">
+      <a class="nav-link active"  style="color: white;">Sair</a>
+    </li>
+  </ul>
+  <div class="my-router">
+    <router-outlet></router-outlet>
+  </div>
+</div>

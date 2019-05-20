@@ -1,0 +1,49 @@
+.myContainerS {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+.myContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-stretch;
+    width: 100%;
+}
+
+.cor-fonte {
+    color: #9db0d3;
+}
+
+.margem {
+    margin-bottom: 15px;
+}
+
+.tituloCategoria{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.botao {
+    background-color: #9db0d3;;
+    color: white;
+    width: 100%;
+    border: none;
+}
+
+::placeholder {
+    color: #9db0d3;
+}
+
+.linhas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.linha {
+    height: 2px;
+    background-color: #f1f4f9;
+    flex: 1;
+}   

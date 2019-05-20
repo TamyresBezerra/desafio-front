@@ -1,0 +1,19 @@
+<div class="container-fluid container-my">
+  <div class="container">
+    <div class="d-flex flex-column list mt-3 mb-3">
+      <div *ngFor="let item of pedidos"  class="d-flex flex-column pl-4 mt-2 item-list font-text">
+        <div class="item-t mb-2">
+          <button class="btn button-top">{{item.status}}</button>
+        </div>
+        <div class="d-flex justify-content-between item-b">
+          <div class="d-flex flex-column justify-content-center esq">
+            <div *ngFor="let produto of item.produtos_processados">
+              <div>{{produto.especificacao}}</div>
+            </div>
+            <div>Valor: R$ {{item.preco}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

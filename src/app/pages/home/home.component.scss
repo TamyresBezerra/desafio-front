@@ -1,0 +1,41 @@
+.cont{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 100%;
+    //padding: 22% 0;
+    vertical-align: center;
+    padding-bottom: 100px;
+}
+
+.buttons{
+    margin-top: 50px;
+    button{
+        margin: 10px;
+        height: 50px;
+        width: 200px;
+    }
+    .bt-in-pro{
+        background-color: #c4cfe3; 
+        color: #5370af;
+    }
+    .bt-in-gra{
+        background-color: #9dafd3; 
+        color: white;
+    }
+}
+
+.title-top{
+    font-size: 75px; 
+    color: #5370af;
+}
+
+.description{
+    color: #c4cfe3;
+    font-size: 23px;
+}
+
+.texto {
+    text-align: center;
+}

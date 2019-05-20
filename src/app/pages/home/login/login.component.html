@@ -1,0 +1,26 @@
+<div class="row myContainerS">
+  <div class="col-4 offset-4">
+    <div class="mycontainer">
+      <div class="cor-fonte fonte">
+        <h4>Login</h4>
+        <p>Ainda não possui uma conta?
+          <a [routerLink]="['/cadastro']">Crie aqui >></a>
+        </p>
+      </div>
+      <div class="linhas">
+        <div class="linha"></div>
+        <div class="texto cor-fonte">
+          Acesse sua conta
+        </div>
+        <div class="linha"></div>
+      </div>
+      <form action="" class="margem" (ngSubmit)="loginUsuario()">
+        <input class="form-control campoForm margem" type="text" placeholder="Usuário" name="nome" [(ngModel)]="nome">
+        <input class="form-control campoForm margem" type="email" placeholder="Email" name="email" [(ngModel)]="email">
+        <input class="form-control campoForm margem" type="password" placeholder="Senha" name="password" [(ngModel)]="password">
+        <button type="submit" class="btn btn-primary botao">Logar <fa name="caret-right"></fa></button>
+      </form>
+      <div class="linha"></div>
+    </div>
+  </div>
+</div>

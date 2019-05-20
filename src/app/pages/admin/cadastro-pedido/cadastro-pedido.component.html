@@ -1,0 +1,22 @@
+<div class="row myContainerS">
+    <div class="col-4 offset-4 myContainer">
+      <h4 class="fonte cor-fonte margem tituloCategoria">Compra</h4>
+        <div class="linhas">
+          <div class="linha"></div>
+          <div class="texto cor-fonte">
+            Escolha um item por categoria
+          </div>
+          <div class="linha"></div>
+        </div>
+        <form action="" class="margem cor-fonte fonte" (ngSubmit)=finalizarPedido()>
+          <div *ngFor="let categoria of categorias"> 
+            <label>{{categoria.nome}}:</label>
+              <select class="custom-select margem" required (change)="produtoSelecionado(categoria.id, $event.target.value)">
+                <option value="" selected disabled>Selecione o item</option>
+                <option *ngFor="let prod of categoria.produtos" value="{{prod.id}}">{{prod.especificacao}}</option>
+              </select>
+          </div>
+          <button type="submit" class="btn btn-primary botao">Finalizar Pedido <fa name="caret-right"></fa></button>
+        </form>
+    </div>
+  </div>

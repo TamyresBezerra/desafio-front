@@ -1,0 +1,60 @@
+$font-color: #9db0d3;
+
+.container-my{
+    background-color: #f7f9fb;
+}
+
+.font-text{
+    color: $font-color;
+}
+
+.button-top{
+    padding: 1px; 
+    font-weight: bold; 
+    background-color: $font-color; 
+    color: white; 
+    height: 22px; 
+    font-size: 12px;
+}
+
+.item-list{
+    padding: 0 20px 20px 0;
+}
+
+.divider{
+    width: 2px; 
+    background-color: $font-color;
+    opacity: 0.5; 
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    button{
+        border: solid 1px #d3d1d1;
+        background-color: white;
+        font-size: 20px;
+        color: $font-color;
+        width: auto;
+        height: 120px;
+    } 
+}
+
+.text-questionario{
+    display: flex;
+    justify-content: flex-end;
+    color: $font-color;
+    margin-top: 40px;
+}
+
+.search{
+    width: 50%;
+}  
+
+.item-list{
+    background-color: white;
+}
